@@ -1,0 +1,43 @@
+generated: '2026-08-26'
+method: probed
+source: https://rezotx.com/.well-known/ (live probes, 2026-08-26)
+note: >-
+  Every /.well-known/ path probed on the single host Rezo Therapeutics operates
+  (rezotx.com, a WordPress.com/Jetpack-hosted corporate marketing site) returned HTTP 404
+  with the site's standard themed 404 page. The host is NOT a soft-404 catch-all: a control
+  probe of a deliberately nonsensical path returned the same 404 status, and no path
+  returned 200, so these are genuine absences rather than an SPA answering everything.
+  No WellKnown and no SecurityTxt pointer is emitted in apis.yml because the provider serves
+  none of these documents. Recorded as an honest absence.
+hit_count: 0
+hosts:
+- host: https://rezotx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+soft_404_control:
+  path: /.well-known/definitely-not-real-xyz123
+  status: 404
+  bytes: 37887
+  verdict: >-
+    Control path returned 404, and every real .well-known path returned 404 with a
+    comparable byte count. The host answers honestly; no catch-all 200 inflation.

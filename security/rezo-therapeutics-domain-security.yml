@@ -1,0 +1,17 @@
+generated: '2026-08-26'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: rezotx.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 28 02:47:12 2026 GMT
+  hsts: true
+  hsts_max_age: 0
+domains:
+- domain: rezotx.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

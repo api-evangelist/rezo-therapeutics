@@ -1,17 +1,36 @@
 aid: rezo-therapeutics
 name: Rezo Therapeutics
-description: 'Rezo Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Rezo Therapeutics is a San Francisco (Mission Bay) biopharmaceutical company spun out of
+  the Quantitative Biosciences Institute (QBI) at UCSF, co-founded by Nevan Krogan, that is
+  building a disease-agnostic network-biology drug discovery platform. Its "sequence to
+  systems to drugs" approach integrates proteomics, human genetics, structural biology,
+  medicinal chemistry, bioinformatics and machine learning to construct comprehensive maps
+  of molecular disease networks and identify novel, druggable targets for precision
+  therapeutics, with an initial focus on oncology. The company launched in November 2022
+  with a $78M Series A led by SR One, a16z Bio + Health and Norwest Venture Partners, and
+  appointed Derek Hicks as chief executive officer in August 2025. Rezo is a therapeutics
+  developer rather than a software vendor: its computational platform is internal R&D
+  tooling, and the company publishes no public API, SDK, developer portal or machine-readable
+  contract of any kind.
+image: https://i0.wp.com/rezotx.com/wp-content/uploads/2026/03/cropped-Rezo-Icon-Favicon-1.png?fit=512%2C512&ssl=1
 url: https://raw.githubusercontent.com/api-evangelist/rezo-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Drug Discovery
+- Oncology
+- Proteomics
+- Life Sciences
+- Precision Medicine
+- Artificial Intelligence
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,58 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rezo-therapeutics-domain-security.yml
+- type: ContentSignal
+  url: well-known/rezo-therapeutics-content-signals.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://rezotx.com/
+- type: Blog
+  url: https://rezotx.com/news/
+- type: PrivacyPolicy
+  url: https://rezotx.com/privacy-policy/
+- type: TermsOfService
+  url: https://rezotx.com/terms-of-use/
+- type: About
+  url: https://rezotx.com/technology/
+- type: Careers
+  url: https://rezotx.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/rezotx
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/rezo-therapeutics
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Rezo Therapeutics is a clinical-stage biopharmaceutical company whose entire public web
+    presence is nine WordPress pages (home, technology, team, careers, news, investors,
+    privacy, terms, one stub) with no developer, docs, or API section anywhere in its
+    sitemap; the only machine-readable surface on rezotx.com is the generic WordPress core
+    and Jetpack /wp-json route index that every WordPress.com-hosted site serves, which is
+    site infrastructure and not a product API.
+  evidence:
+  - url: https://rezotx.com/wp-sitemap-posts-page-1.xml
+    status: 200
+  - url: https://rezotx.com/openapi.json
+    status: 404
+  - url: https://rezotx.com/graphql
+    status: 404
+  - url: https://rezotx.com/llms.txt
+    status: 404
+  - url: https://rezotx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://rezotx.com/.well-known/agent.json
+    status: 404
+  - url: https://rezotx.com/.well-known/security.txt
+    status: 404
+  - url: https://rezotx.com/.well-known/api-catalog
+    status: 404
+  - url: https://rezotx.com/robots.txt
+    status: 200
+  checked: '2026-08-26'

@@ -1,0 +1,42 @@
+generated: '2026-08-26'
+method: probed
+source: https://rezotx.com/robots.txt
+note: >-
+  Rezo Therapeutics serves no /.well-known/ documents, but it DOES publish a machine-readable
+  AI-consent policy at /robots.txt using the Cloudflare-managed Content Signals Policy. This
+  is the only agent-facing consent artifact the company serves, and it is recorded here
+  verbatim (rezo-therapeutics-robots.txt) rather than being inferred. It is a consent signal,
+  not an API surface.
+host: https://rezotx.com
+document:
+  path: /robots.txt
+  status: 200
+  bytes: 1946
+  file: rezo-therapeutics-robots.txt
+content_signals:
+  standard: Content Signals Policy (Cloudflare managed)
+  applies_to: 'User-agent: *'
+  signals:
+    search: yes
+    ai-train: no
+    use: reference
+  rights_reservation: >-
+    The policy text asserts that any restriction expressed via Content Signals is an express
+    reservation of rights under Article 4 of EU Directive 2019/790 (DSM Copyright Directive).
+ai_crawler_directives:
+  posture: allow-all-except-named-ai-crawlers
+  disallowed_agents:
+  - Amazonbot
+  - Applebot-Extended
+  - Bytespider
+  - CCBot
+  - ClaudeBot
+  - CloudflareBrowserRenderingCrawler
+  - Google-Extended
+  - GPTBot
+  - meta-externalagent
+  note: >-
+    ClaudeBot is disallowed site-wide. This enrichment pass therefore made no ClaudeBot-identified
+    requests; all probes were ordinary HTTP HEAD/GET requests recorded here with their statuses,
+    and no disallowed path was crawled for content.
+sitemap: https://rezotx.com/wp-sitemap.xml
