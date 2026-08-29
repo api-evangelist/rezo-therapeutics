@@ -13,6 +13,17 @@ description: >-
   developer rather than a software vendor: its computational platform is internal R&D
   tooling, and the company publishes no public API, SDK, developer portal or machine-readable
   contract of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://i0.wp.com/rezotx.com/wp-content/uploads/2026/03/cropped-Rezo-Icon-Favicon-1.png?fit=512%2C512&ssl=1
 url: https://raw.githubusercontent.com/api-evangelist/rezo-therapeutics/refs/heads/main/apis.yml
 x-type: company
