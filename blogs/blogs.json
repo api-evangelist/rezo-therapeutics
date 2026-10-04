@@ -3,16 +3,17 @@
   "feeds": [
     {
       "source": "https://rezotx.com/",
-      "feed_url": "https://rezotx.com/",
+      "feed_url": "https://rezotx.com/blog/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "discovered"
     },
     {
       "source": "https://rezotx.com/blog/feed/",
       "feed_url": "https://rezotx.com/blog/feed/",
+      "title": "",
       "saved": 0,
-      "error": "no_feed_no_posts"
+      "method": "feed"
     },
     {
       "source": "https://rezotx.com/feed/",
@@ -23,5 +24,5 @@
     }
   ],
   "post_count": 6,
-  "fetched": "2026-09-19T20:17:39Z"
+  "fetched": "2026-10-03T12:30:02Z"
 }
